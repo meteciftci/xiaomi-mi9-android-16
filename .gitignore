@@ -1,0 +1,9 @@
+.DS_Store
+files/
+tools/
+logs/
+build/
+extrakey/build/
+extrakey/extrakey.keystore
+bootanimation/
+*.idsig

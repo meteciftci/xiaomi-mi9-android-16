@@ -1,0 +1,68 @@
+# Ozel GApps paketi: hangi NikGapps ogeleri acik kalacak
+# build-gapps.sh bu dosyayi okur. [config] bolumu nikgapps.config anahtarlarini, [files] bolumu zip'te tutulacak paketleri belirler.
+# Listede OLMAYAN her config anahtari 0 yapilir, olmayan her AppSet paketi zip'ten silinir.
+
+[config]
+# Core
+Core
+>>ExtraFiles
+>>GooglePlayStore
+>>GoogleServicesFramework
+>>GoogleContactsSyncAdapter
+>>GoogleCalendarSyncAdapter
+>>GmsCore
+# Crdroid uygulamalarinin yerine gelenler
+GoogleDialer
+GoogleMessages
+GoogleContacts
+CarrierServices
+GoogleClock
+GBoard
+GoogleCalculator
+GoogleCalendar
+GooglePhotos
+# Android Auto ve arac kullanimi icin
+AndroidAuto
+GoogleSearch
+>>Velvet
+GoogleTTS
+# WebView (tarayici DEGIL, uygulamalarin ihtiyaci)
+GoogleChrome
+>>WebViewGoogle
+>>TrichromeLibrary
+# Kurulum sihirbazi (Pixel surumu: bu 'full' pakette SetupWizard yerine bu var)
+PixelSetupWizard
+DeviceSetup
+# Pixel'e ozel: DevicePersonalizationServices (113 MB) BILEREK YOK
+PixelSpecifics
+>>SettingsServices
+>>PrivateComputeServices
+
+[files]
+AppSet/Core/ExtraFiles.tar.xz
+AppSet/Core/GmsCore.tar.xz
+AppSet/Core/GoogleCalendarSyncAdapter.tar.xz
+AppSet/Core/GoogleContactsSyncAdapter.tar.xz
+AppSet/Core/GooglePlayStore.tar.xz
+AppSet/Core/GoogleServicesFramework.tar.xz
+AppSet/GoogleDialer/GoogleDialer.tar.xz
+AppSet/GoogleMessages/GoogleMessages.tar.xz
+AppSet/GoogleContacts/GoogleContacts.tar.xz
+AppSet/CarrierServices/CarrierServices.tar.xz
+AppSet/GoogleClock/GoogleClock.tar.xz
+AppSet/GBoard/GBoard.tar.xz
+AppSet/GoogleCalculator/GoogleCalculator.tar.xz
+AppSet/GoogleCalendar/GoogleCalendar.tar.xz
+AppSet/GooglePhotos/GooglePhotos.tar.xz
+AppSet/AndroidAuto/AndroidAuto.tar.xz
+AppSet/GoogleSearch/Velvet.tar.xz
+AppSet/GoogleTTS/GoogleTTS.tar.xz
+AppSet/GoogleChrome/WebViewGoogle.tar.xz
+AppSet/GoogleChrome/TrichromeLibrary.tar.xz
+AppSet/PixelSetupWizard/SetupWizardPixel.tar.xz
+AppSet/PixelSetupWizard/GoogleRestorePixel.tar.xz
+AppSet/PixelSetupWizard/PixelSetupWizard.tar.xz
+AppSet/PixelSetupWizard/GoogleOneTimeInitializerPixel.tar.xz
+AppSet/DeviceSetup/DeviceSetup.tar.xz
+AppSet/PixelSpecifics/SettingsServices.tar.xz
+AppSet/PixelSpecifics/PrivateComputeServices.tar.xz

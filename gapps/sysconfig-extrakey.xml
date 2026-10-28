@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sistem uygulamalari ilk acilista "durdurulmus" sayilir ve BOOT_COMPLETED almaz; bunu engeller. -->
+<config>
+    <initial-package-state package="com.mi9rom.extrakey" stopped="false" />
+</config>

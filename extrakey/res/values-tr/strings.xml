@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Ekstra tu\u015f</string>
+    <string name="settings_summary">Yan tu\u015fun g\u00f6revini se\u00e7in</string>
+    <string name="service_desc">Yan tu\u015fun se\u00e7ti\u011finiz g\u00f6revi yapmas\u0131n\u0131 sa\u011flar.</string>
+    <string name="title">Yan tu\u015f</string>
+    <string name="subtitle">Her bas\u0131\u015f\u0131n ne yapaca\u011f\u0131n\u0131 se\u00e7in</string>
+    <string name="g_single">Tek bas\u0131\u015f</string>
+    <string name="g_double">\u00c7ift bas\u0131\u015f</string>
+    <string name="g_long">Uzun bas\u0131\u015f</string>
+    <string name="act_none">Hi\u00e7bir \u015fey yapma</string>
+    <string name="act_assistant">Sesli asistan</string>
+    <string name="act_camera">Kamera</string>
+    <string name="act_flashlight">Fener</string>
+    <string name="act_screenshot">Ekran g\u00f6r\u00fcnt\u00fcs\u00fc</string>
+    <string name="act_recents">Son uygulamalar</string>
+    <string name="act_notifications">Bildirimler</string>
+    <string name="act_quick_settings">H\u0131zl\u0131 ayarlar</string>
+    <string name="act_lock">Ekran\u0131 kilitle</string>
+    <string name="act_app">Uygulama a\u00e7\u2026</string>
+    <string name="pick_app">Uygulama se\u00e7in</string>
+    <string name="svc_off_title">Hizmet kapal\u0131</string>
+    <string name="svc_off">Tu\u015fun \u00e7al\u0131\u015fmas\u0131 i\u00e7in gereken eri\u015filebilirlik hizmetini a\u00e7mak i\u00e7in dokunun.</string>
+    <string name="app_chosen">%s uygulamas\u0131n\u0131 a\u00e7</string>
+</resources>

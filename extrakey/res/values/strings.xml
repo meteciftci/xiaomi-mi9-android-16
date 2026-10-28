@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Extra key</string>
+    <string name="settings_summary">Choose what the side button does</string>
+    <string name="service_desc">Lets the side button run the action you choose.</string>
+    <string name="title">Side button</string>
+    <string name="subtitle">Choose what each press does</string>
+    <string name="g_single">Single press</string>
+    <string name="g_double">Double press</string>
+    <string name="g_long">Long press</string>
+    <string name="act_none">Do nothing</string>
+    <string name="act_assistant">Voice assistant</string>
+    <string name="act_camera">Camera</string>
+    <string name="act_flashlight">Flashlight</string>
+    <string name="act_screenshot">Screenshot</string>
+    <string name="act_recents">Recent apps</string>
+    <string name="act_notifications">Notifications</string>
+    <string name="act_quick_settings">Quick settings</string>
+    <string name="act_lock">Lock screen</string>
+    <string name="act_app">Open an app\u2026</string>
+    <string name="pick_app">Choose an app</string>
+    <string name="svc_off_title">Service is off</string>
+    <string name="svc_off">Tap to turn on the accessibility service the button needs.</string>
+    <string name="app_chosen">Open %s</string>
+</resources>
