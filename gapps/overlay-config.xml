@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Varsayilan gezinme: hareketler. Kullanici Ayarlar > Sistem > Hareketle gezinme'den degistirebilir. -->
+<!-- Varsayilan gezinme: hareketler. Kullanici Ayarlar > Sistem > Gezinme modu'ndan degistirebilir. -->
 <config>
     <overlay package="com.android.internal.systemui.navbar.gestural" enabled="true" mutable="true" />
     <overlay package="com.android.internal.systemui.navbar.threebutton" enabled="false" mutable="true" />

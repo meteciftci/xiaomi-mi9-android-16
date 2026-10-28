@@ -21,4 +21,23 @@
     <string name="svc_off_title">Service is off</string>
     <string name="svc_off">Tap to turn on the accessibility service the button needs.</string>
     <string name="app_chosen">Open %s</string>
+    <string name="vol_title">Volume slider in Quick settings</string>
+    <string name="vol_sub">Show or hide the volume slider next to brightness</string>
+    <string name="vol_summary">Show or hide the slider</string>
+    <string name="dyn_title">Dynamic bar</string>
+    <string name="dyn_sub">Turn the dynamic bar on or off</string>
+    <string name="dyn_summary">On or off</string>
+    <string name="bat_title">Battery percentage</string>
+    <string name="bat_sub">Choose where the percentage appears</string>
+    <string name="bat_summary">Inside the icon, next to it, or hidden</string>
+    <string name="bat_inside">Inside the icon</string>
+    <string name="bat_next">Next to the icon</string>
+    <string name="swipe_title">Three-finger swipe</string>
+    <string name="swipe_sub">Choose what swiping down with three fingers does</string>
+    <string name="swipe_summary">Screenshot or nothing</string>
+    <string name="hide">Hidden</string>
+    <string name="show">Shown</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="selected">Selected</string>
 </resources>

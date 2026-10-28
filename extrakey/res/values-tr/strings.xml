@@ -21,4 +21,23 @@
     <string name="svc_off_title">Hizmet kapal\u0131</string>
     <string name="svc_off">Tu\u015fun \u00e7al\u0131\u015fmas\u0131 i\u00e7in gereken eri\u015filebilirlik hizmetini a\u00e7mak i\u00e7in dokunun.</string>
     <string name="app_chosen">%s uygulamas\u0131n\u0131 a\u00e7</string>
+    <string name="vol_title">Hızlı ayarlarda ses kaydırıcısı</string>
+    <string name="vol_sub">Parlaklık yanındaki ses kaydırıcısını gösterin ya da gizleyin</string>
+    <string name="vol_summary">Kaydırıcıyı göster ya da gizle</string>
+    <string name="dyn_title">Dinamik çubuk</string>
+    <string name="dyn_sub">Dinamik çubuğu açın ya da kapatın</string>
+    <string name="dyn_summary">Açık ya da kapalı</string>
+    <string name="bat_title">Pil yüzdesi</string>
+    <string name="bat_sub">Yüzdenin nerede görüneceğini seçin</string>
+    <string name="bat_summary">Simge içinde, yanında ya da gizli</string>
+    <string name="bat_inside">Simgenin içinde</string>
+    <string name="bat_next">Simgenin yanında</string>
+    <string name="swipe_title">Üç parmak kaydırma</string>
+    <string name="swipe_sub">Üç parmakla aşağı kaydırmak ne yapsın</string>
+    <string name="swipe_summary">Ekran görüntüsü ya da hiçbir şey</string>
+    <string name="hide">Gizli</string>
+    <string name="show">Görünür</string>
+    <string name="on">Açık</string>
+    <string name="off">Kapalı</string>
+    <string name="selected">Seçili</string>
 </resources>

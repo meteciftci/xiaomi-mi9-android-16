@@ -17,6 +17,23 @@ public class KeyService extends AccessibilityService {
     private static final long DOUBLE_MS = 280;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
+    private final android.database.ContentObserver setupObserver = new android.database.ContentObserver(handler) {
+        @Override public void onChange(boolean selfChange) { scheduleGestureNav(); }
+    };
+
+    private void scheduleGestureNav() {
+        if (!Prefs.setupComplete(this)) return;
+        // Sihirbaz bittikten sonra kendi ayarini uygulayabiliyor; birkac kez deneyip sonuncusunu birakiyoruz
+        handler.postDelayed(() -> Prefs.applyGestureNav(this), 3000);
+    }
+
+    @Override
+    protected void onServiceConnected() {
+        super.onServiceConnected();
+        getContentResolver().registerContentObserver(
+            android.provider.Settings.Secure.getUriFor("user_setup_complete"), false, setupObserver);
+        scheduleGestureNav();
+    }
     private boolean torchOn;
     private boolean longFired;
     private int taps;

@@ -62,6 +62,34 @@ final class Prefs {
         }
     }
 
+    // Kurulum sihirbazi bitince hareketle gezinme overlay'ini bir kez acar (sihirbaz 3 tusa geri aliyor).
+    static boolean setupComplete(Context c) {
+        return Settings.Secure.getInt(c.getContentResolver(), "user_setup_complete", 0) == 1;
+    }
+
+    static void applyGestureNav(Context c) {
+        SharedPreferences p = sp(c);
+        if (p.getBoolean("gesture_nav_v1", false) || !setupComplete(c)) return;
+        try {
+            Object om = c.getSystemService("overlay");
+            om.getClass().getMethod("setEnabledExclusiveInCategory", String.class, android.os.UserHandle.class)
+                .invoke(om, "com.android.internal.systemui.navbar.gestural", android.os.Process.myUserHandle());
+            p.edit().putBoolean("gesture_nav_v1", true).apply();
+        } catch (ReflectiveOperationException | RuntimeException ignored) {
+        }
+    }
+
+    static int getLineage(Context c, String name, int def) {
+        try (android.database.Cursor q = c.getContentResolver().query(
+                android.net.Uri.parse("content://lineagesettings/system"), new String[] { "value" }, "name=?", new String[] { name }, null)) {
+            if (q != null && q.moveToFirst()) return Integer.parseInt(q.getString(0));
+        } catch (RuntimeException ignored) {
+        }
+        return def;
+    }
+
+    static void putLineagePublic(Context c, String name, int value) { putLineage(c, name, value); }
+
     private static void putLineage(Context c, String name, int value) {
         android.content.ContentValues v = new android.content.ContentValues();
         v.put("name", name);
